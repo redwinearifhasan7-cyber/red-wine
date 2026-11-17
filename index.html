@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RED WINE | Luxury Experience</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #111;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #d4a35b;
+    letter-spacing: 3px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4a35b;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.8)),
+    url("https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 8vw, 85px);
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #ddd;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 35px;
+    background: #b88646;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #d4a35b;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 650px;
+    margin: auto;
+    color: #bbb;
+    line-height: 1.8;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #171717;
+    border: 1px solid #333;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #d4a35b;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 20px 10px 10px;
+    color: #d4a35b;
+}
+
+.card p {
+    color: #aaa;
+    padding: 0 15px 25px;
+    line-height: 1.6;
+}
+
+.contact p {
+    color: #bbb;
+    margin: 15px;
+}
+
+footer {
+    background: #111;
+    text-align: center;
+    padding: 25px;
+    color: #888;
+    border-top: 1px solid #333;
+}
+
+@media(max-width:600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">RED WINE.</div>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#collection">COLLECTION</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>THE RED WINE</h1>
+    <p>Elegance is an attitude. Experience the luxury.</p>
+    <a href="#about" class="btn">EXPLORE MORE</a>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">OUR STORY</h2>
+    <p>
+        Welcome to RED WINE. A place where luxury,
+        elegance and timeless design come together.
+        Discover a beautiful digital experience
+        crafted with passion and creativity.
+    </p>
+</section>
+
+<section id="collection">
+    <h2 class="section-title">OUR COLLECTION</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600">
+            <h3>CLASSIC STYLE</h3>
+            <p>Timeless elegance and premium design.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600">
+            <h3>MODERN LUXURY</h3>
+            <p>Modern beauty with a luxurious touch.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600">
+            <h3>EXCLUSIVE DESIGN</h3>
+            <p>Unique style made for special moments.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">GET IN TOUCH</h2>
+    <p>Have a question? We would love to hear from you.</p>
+    <a href="mailto:hello@example.com" class="btn">CONTACT US</a>
+</section>
+
+<footer>
+    © 2026 RED WINE. All Rights Reserved.
+</footer>
+
+</body>
+</html>
